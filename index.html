@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Proyekt</title>
+  <!-- <script src="https://unpkg.com/vue@next"></script> -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+  <div id="app">
+    <div class="container max-w-4xl mx-auto pt-12">
+      <div class="block-1">
+        <h1 class="text-4xl text-white bg-red-500 max-w-xs rounded-2xl mx-auto px-3 py-2 font-bold text-center p-2">
+          {{text}} {{count}}</h1>
+        <div class="buttons text-center space-x-4 p-4 text-white font-bold">
+          <button v-on:click="count++"
+            class="btn btn-succes border-2 bg-red-500 px-3 py-2 rounded-lg text-center">Плюсуем</button>
+          <button v-on:click="count--"
+            class="btn btn-danger border-2 bg-red-500 px-3 py-2 rounded-lg text-center">Минусуем</button>
+        </div>
+        <img src="img/2.png" alt="">
+      </div>
+    </div>
+     <div class="header">
+      <div
+        class="container max-w-5xl w-full bg-slate-700 px-8  mt-24 mb-12 py-2 mx-auto flex justify-between items-center">
+        <div class="logo">ToDo List</div>
+        <div class="form">
+          <input type="text">
+          <button class="btn ml-4">Add a new task</button>
+        </div>
+      </div>
+      <div class="container max-w-5xl w-full h-12 px-8  mx-auto">
+        <h2 class="flex justify-between py-6">
+          <span>To Do</span>
+          <span class="mask-num">10</span>
+        </h2>
+        <ul class="mask-list">
+          <li class="flex justify-between">
+            <div class="flex justify-between">
+              <input type="checkbox" class="mr-4"><input type="text">
+              <span class="flex justify-end ml-32">New video</span>
+            </div>
+            <button class="btn-remove right-2">Remove</button>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+  </div> 
+
+    
+    <script src="https://unpkg.com/vue@next"></script> 
+    <script src="script.js"></script>
+</body>
+
+</html>
